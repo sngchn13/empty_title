@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="TerrainSet" format=3 uid="uid://d3usa1qsnb6wh"]
+
+[ext_resource type="Script" uid="uid://cfccbn8rw88io" path="res://board/tile/terrain/terrain_set.gd" id="1_d3jbr"]
+[ext_resource type="Script" uid="uid://cx7nbkhojkyp4" path="res://board/tile/terrain/terrain_type.gd" id="2_mflcj"]
+[ext_resource type="Resource" uid="uid://ccah2ong1fna0" path="res://board/tile/terrain/resources/terrain_types/0_grass.tres" id="3_bgpvu"]
+[ext_resource type="Resource" uid="uid://dfrpkpmujd1fs" path="res://board/tile/terrain/resources/terrain_types/1_gravel.tres" id="4_tb0gk"]
+[ext_resource type="Resource" uid="uid://cdbcrbrp53w0r" path="res://board/tile/terrain/resources/terrain_types/2_dirt.tres" id="5_f1dpm"]
+
+[resource]
+script = ExtResource("1_d3jbr")
+terrain_list = Array[ExtResource("2_mflcj")]([ExtResource("3_bgpvu"), ExtResource("4_tb0gk"), ExtResource("5_f1dpm")])
+metadata/_custom_type_script = "uid://cfccbn8rw88io"
