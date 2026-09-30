@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://rccap873jq05"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2qrjk"]
+albedo_color = Color(0.32941177, 0.26666668, 0.16470589, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_8l4nk"]
+material = SubResource("StandardMaterial3D_2qrjk")
+size = Vector3(1, 0.2, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4fij8"]
+size = Vector3(1, 0.2, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f1ou5"]
+albedo_color = Color(0.5019608, 0.5019608, 0.5019608, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_fqwt3"]
+material = SubResource("StandardMaterial3D_f1ou5")
+size = Vector3(1, 0.2, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rnary"]
+albedo_color = Color(0.24705882, 0.60784316, 0.043137256, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_4fij8"]
+material = SubResource("StandardMaterial3D_rnary")
+size = Vector3(1, 0.2, 1)
+
+[node name="Tiles" type="Node3D" unique_id=29581059]
+
+[node name="Soil" type="MeshInstance3D" parent="." unique_id=1228664576]
+mesh = SubResource("BoxMesh_8l4nk")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Soil" unique_id=1612627920]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Soil/StaticBody3D" unique_id=524220827]
+shape = SubResource("BoxShape3D_4fij8")
+
+[node name="Gravel" type="MeshInstance3D" parent="." unique_id=1526222175]
+mesh = SubResource("BoxMesh_fqwt3")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Gravel" unique_id=1742382842]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Gravel/StaticBody3D" unique_id=193783355]
+shape = SubResource("BoxShape3D_4fij8")
+
+[node name="Grass" type="MeshInstance3D" parent="." unique_id=1388704711]
+mesh = SubResource("BoxMesh_4fij8")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Grass" unique_id=2141623946]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Grass/StaticBody3D" unique_id=1112991671]
+shape = SubResource("BoxShape3D_4fij8")

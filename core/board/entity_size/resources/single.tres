@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="EntitySize" format=3 uid="uid://dvktb7vkhlnti"]
 
-[ext_resource type="Script" uid="uid://132f3bidehie" path="res://board/entity_size/entity_size.gd" id="1_idl6p"]
+[ext_resource type="Script" uid="uid://132f3bidehie" path="res://core/board/entity_size/entity_size.gd" id="1_idl6p"]
 
 [resource]
 script = ExtResource("1_idl6p")

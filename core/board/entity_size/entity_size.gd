@@ -8,7 +8,7 @@ extends Resource
 @export_range(1, 4) var height: int = 1
 
 ## 기준점은 x, z가 가장 작은 모서리 칸이다.
-func cells(origin: Vector3i) -> Array[Vector3i]:
+func footprint_at(origin: Vector3i) -> Array[Vector3i]:
 	var out: Array[Vector3i] = []
 	for dx in side:
 		for dz in side:
