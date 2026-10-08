@@ -1,0 +1,21 @@
+{
+	"size": [4, 1, 4],
+	"entities": [
+		{ "GridPosition": { "_cell": [0, 0, 0] }, "TileType": { "_value": "grass" } },
+		{ "GridPosition": { "_cell": [1, 0, 0] }, "TileType": { "_value": "grass" } },
+		{ "GridPosition": { "_cell": [2, 0, 0] }, "TileType": { "_value": "gravel" } },
+		{ "GridPosition": { "_cell": [3, 0, 0] }, "TileType": { "_value": "gravel" } },
+		{ "GridPosition": { "_cell": [0, 0, 1] }, "TileType": { "_value": "grass" } },
+		{ "GridPosition": { "_cell": [1, 0, 1] }, "TileType": { "_value": "soil" } },
+		{ "GridPosition": { "_cell": [2, 0, 1] }, "TileType": { "_value": "soil" } },
+		{ "GridPosition": { "_cell": [3, 0, 1] }, "TileType": { "_value": "gravel" } },
+		{ "GridPosition": { "_cell": [0, 0, 2] }, "TileType": { "_value": "grass" } },
+		{ "GridPosition": { "_cell": [1, 0, 2] }, "TileType": { "_value": "soil" } },
+		{ "GridPosition": { "_cell": [2, 0, 2] }, "TileType": { "_value": "soil" } },
+		{ "GridPosition": { "_cell": [3, 0, 2] }, "TileType": { "_value": "grass" } },
+		{ "GridPosition": { "_cell": [0, 0, 3] }, "TileType": { "_value": "gravel" } },
+		{ "GridPosition": { "_cell": [1, 0, 3] }, "TileType": { "_value": "gravel" } },
+		{ "GridPosition": { "_cell": [2, 0, 3] }, "TileType": { "_value": "grass" } },
+		{ "GridPosition": { "_cell": [3, 0, 3] }, "TileType": { "_value": "grass" } }
+	]
+}
