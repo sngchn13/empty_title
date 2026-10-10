@@ -2,6 +2,10 @@
 
 [ext_resource type="Script" uid="uid://c4q4qmod738wm" path="res://presentation/mission.gd" id="1_evhdi"]
 [ext_resource type="Script" uid="uid://w60flw4mfy0o" path="res://presentation/board_view.gd" id="2_70bqc"]
+[ext_resource type="MeshLibrary" uid="uid://16lrevjf4t5" path="res://content/meshlib/meshlib.meshlib" id="3_cl6fi"]
+[ext_resource type="Script" uid="uid://bjxdl5t3l08an" path="res://presentation/tile_layer.gd" id="4_hq3hb"]
+
+[sub_resource type="MeshLibrary" id="MeshLibrary_cl6fi"]
 
 [node name="Mission" type="Node" unique_id=1680871291]
 script = ExtResource("1_evhdi")
@@ -9,4 +13,7 @@ script = ExtResource("1_evhdi")
 [node name="BoardView" type="Node3D" parent="." unique_id=367437315]
 script = ExtResource("2_70bqc")
 
-[node name="GridMap" type="GridMap" parent="BoardView" unique_id=311969560]
+[node name="TileLayer" type="GridMap" parent="BoardView" unique_id=311969560]
+mesh_library = ExtResource("3_cl6fi")
+script = ExtResource("4_hq3hb")
+meshlib = SubResource("MeshLibrary_cl6fi")
