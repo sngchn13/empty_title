@@ -1,9 +1,8 @@
 class_name Mission
 extends Node
 
-@export var board_view: BoardView
-
-var _repository: EntityRepository
+@onready var board_view: BoardView = $BoardView
+var _container: ServiceContainer = ServiceContainer.new()
 
 func _ready() -> void:
-	pass
+	board_view.setup(_container)
