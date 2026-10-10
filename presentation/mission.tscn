@@ -1,11 +1,10 @@
 [gd_scene format=3 uid="uid://dvlkikipfcwgf"]
 
 [ext_resource type="Script" uid="uid://c4q4qmod738wm" path="res://presentation/mission.gd" id="1_evhdi"]
-[ext_resource type="Script" uid="uid://w60flw4mfy0o" path="res://presentation/board_view.gd" id="2_70bqc"]
+[ext_resource type="Script" uid="uid://w60flw4mfy0o" path="res://presentation/board_view/board_view.gd" id="2_70bqc"]
 [ext_resource type="MeshLibrary" uid="uid://16lrevjf4t5" path="res://content/meshlib/meshlib.meshlib" id="3_cl6fi"]
-[ext_resource type="Script" uid="uid://bjxdl5t3l08an" path="res://presentation/tile_layer.gd" id="4_hq3hb"]
-
-[sub_resource type="MeshLibrary" id="MeshLibrary_cl6fi"]
+[ext_resource type="Script" uid="uid://bjxdl5t3l08an" path="res://presentation/board_view/tile_layer.gd" id="4_hq3hb"]
+[ext_resource type="Script" uid="uid://boqe64a7rry7a" path="res://presentation/camera/camera_rig.gd" id="5_hq3hb"]
 
 [node name="Mission" type="Node" unique_id=1680871291]
 script = ExtResource("1_evhdi")
@@ -15,5 +14,15 @@ script = ExtResource("2_70bqc")
 
 [node name="TileLayer" type="GridMap" parent="BoardView" unique_id=311969560]
 mesh_library = ExtResource("3_cl6fi")
+cell_size = Vector3(1, 1, 1)
+cell_center_y = false
 script = ExtResource("4_hq3hb")
-meshlib = SubResource("MeshLibrary_cl6fi")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=5377662]
+transform = Transform3D(1, 0, 0, 0, 0.64278764, 0.76604444, 0, -0.76604444, 0.64278764, 0, 0, 0)
+
+[node name="CameraRig" type="Node3D" parent="." unique_id=1566648305]
+script = ExtResource("5_hq3hb")
+
+[node name="Camera3D" type="Camera3D" parent="CameraRig" unique_id=572705970]
+transform = Transform3D(1, 0, 0, 0, 0.7660445, 0.64278764, 0, -0.64278764, 0.7660445, 2, 6, 8)
