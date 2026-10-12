@@ -12,7 +12,7 @@ func place_test_chunk() -> void:
 		push_error("Cannot read chunk: %s" % TEST_CHUNK_PATH)
 		return
 
-	var chunk := Chunk.new()
+	var chunk := MapModule.new()
 	chunk.load_save(parsed)
 
 	for entity_data in chunk.entities:
